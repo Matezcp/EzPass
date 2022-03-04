@@ -14,4 +14,4 @@ Setup:
    or download as zip and extract.
 4. Create a file named "SECRET.KEY" and fill it with any secret you want (it can be any text)
 5. Execute the ezpass.py file
-6. Enjoy
+6. Enjoy (You cannot lose the SECRET.KEY file and cannot recover your universal password in case you forget. Be careful)
