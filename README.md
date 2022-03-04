@@ -1,5 +1,5 @@
 # EzPass
-A simple software to you store yours passwords  
+A simple software to you store your passwords  
 
 Setup:
 ---------------------------  
