@@ -132,7 +132,7 @@ def edit():
 
     try:
         selected = int(selected)
-        if selected > (len(lines[1:]) - 1):
+        if (selected > (len(lines[1:]) - 1)) or (selected < 0):
             valid = False
     except ValueError:
         valid = False
