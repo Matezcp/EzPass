@@ -35,7 +35,6 @@ kdf = PBKDF2HMAC(
 try:
     f = open("passwords.bin",'rb')
 
-
     master_pass = pwinput.pwinput(prompt="Enter the universal password:")
     master_pass_bytes = bytes(master_pass,'utf-8')
 
@@ -73,7 +72,6 @@ finally:
     f.close()
 
 
-
 #Add new passwords
 def add():
     name = input('Account name:')
@@ -102,7 +100,7 @@ def view():
         for i,line in enumerate(lines[1:]):
             data = line.rstrip()
             name, pwd = data.split(b"|")
-            print(f"({i}) Name: {(encoder.decrypt(name)).decode('utf-8')} || Password: {(encoder.decrypt(pwd)).decode('utf-8')}")
+            print(f"{bcolors.HEADER}({i}){bcolors.ENDC} Name: {(encoder.decrypt(name)).decode('utf-8')} || Password: {(encoder.decrypt(pwd)).decode('utf-8')}")
     print("==========================================================================")
     input("Press any button to continue\n")
     os.system('cls' if os.name == 'nt' else 'clear')
